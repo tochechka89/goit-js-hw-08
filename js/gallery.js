@@ -65,6 +65,10 @@ const images = [
     ];
 
     const galleryItem = document.querySelector(".gallery");
+
+    galleryItem.innerHTML = images.map(img => 
+      `<img src="${img.preview}" data-original="${img.original}" alt="${img.description}">`
+  ).join('');
     
     galleryItem.addEventListener("click",(event) => {
       event.preventDefault();
@@ -73,7 +77,7 @@ const images = [
       if (clikedImg.nodeName !== "IMG"){
         return;
       }
-      const bigImage = clikedImg.dataset.source;
+      const bigImage = clikedImg.dataset.original;
 
     const instance = basicLightbox.create(`
         <img src="${bigImage}" width="800" height="600">
