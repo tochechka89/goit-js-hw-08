@@ -10,11 +10,11 @@ body{
     cursor: pointer #4E75FF;
 }
 
-.gallery-item {
+/*.gallery item {
  list-style-type: none;
-}
+}*/
 
-.gallery-image{
+.gallery img{
     width: 360px;
     height: 200px;
 }
