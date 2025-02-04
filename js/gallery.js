@@ -66,8 +66,8 @@ const images = [
 
     const galleryItem = document.querySelector(".gallery");
 
-    galleryItem.innerHTML = images.map(img => 
-      `<img src="${img.preview}" data-original="${img.original}" alt="${img.description}">`
+    galleryItem.innerHTML = images.map((img) => `<li class="gallery-item">
+      <img src="${img.preview}" data-original="${img.original}" alt="${img.description}"></li>`
   ).join('');
     
     galleryItem.addEventListener("click",(event) => {

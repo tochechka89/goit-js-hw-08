@@ -7,14 +7,14 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 24px; 
-    cursor: pointer #4E75FF;
+    cursor: pointer;
 }
 
-/*.gallery item {
+.gallery-item {
  list-style-type: none;
-}*/
+}
 
-.gallery img{
+.gallery-item img{
     width: 360px;
     height: 200px;
 }
